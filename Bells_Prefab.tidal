@@ -1,0 +1,248 @@
+
+-----------------------------------PIANO PT.1-----------------------------------
+-- Piano Pt.1 (Very Slow)-- Orbit 0 (Large)
+
+d1 $ slow 8 $ n "bf6 [a6 bf6] g6" # s "superpiano"
+    # pan 0.5
+    # attack 0.01
+    # decay 2
+    # sustain 6
+    # release 50
+    # gain 0.8
+    # cutoff 200
+    # room 1
+    # size 1
+    # orbit 1
+
+-- Piano Pt.1 (Normal Key) - Orbit 1 (Small)
+
+d1 $ n "bf6 [a6 bf6] g6" # s "superpiano"
+    # pan 0.5
+    # velocity 1
+    # attack 0.01
+    # decay 2
+    # sustain 6
+    # release 100
+    # room 0.9
+    # size 0.8
+    # orbit "1"
+    # gain 0.7
+    # cut 2
+    # cutoff 400
+
+  d1 $ slow 16 $ n "d7 [cs7 d7] b6" # s "superpiano"
+        # pan 0.5
+        # attack 0.01
+        # decay 2
+        # sustain 6
+        # release 50
+        # gain 0.8
+        # cutoff 800
+        # room 1
+        # size 1
+        # orbit 1
+
+-- Piano Pt.1 (Key Change)
+
+d1 $ slow 1 $ n "d7 [cs7 d7] b6" # s "superpiano"
+    # pan 0.5
+    # velocity 1
+    # attack 0.01
+    # decay 2
+    # sustain 6
+    # release 100
+    # room 0.9
+    # size 0.8
+    # orbit "1"
+    # gain 0.7
+    # cut 2
+    # cutoff 800
+
+d1 silence
+-----------------------------------PIANO PT.2-----------------------------------
+-- Piano Pt.2 (Normal Key) - Orbit 0
+
+d2 $ slow 4 $ n "d4 ~ ~  c4 ~ ~  bf3 ~ ~ a3 ~ ~" # s "superpiano"
+    # pan 0.5
+    # attack 0.02
+    # velocity 1
+    # sustain 2
+    # release 80
+    # delay 0
+    # gain 1
+    # cutoff 200
+    # room 0.9
+    # size 0.9
+    # orbit "0"
+
+-- Piano Pt.2 (Key Change)
+
+d2 $ slow 4 $ n "fs4 ~ ~  e4 ~ ~  d4 ~ ~ cs4 ~ ~" # s "superpiano"
+    # pan 0.5
+    # attack 0.02
+    # velocity 1
+    # sustain 2
+    # release 40
+    # delay 0
+    # gain 0.8
+    # cutoff 200
+    # room 0.9
+    # size 0.9
+    # orbit "0"
+
+d2 silence
+-------------------------------------BELLS--------------------------------------
+-- Bells (Normal Key) - Orbit 1
+
+d3 $ slow 4 $ n "d7 [~ d7] ~  c7 [~ c7] ~  bf6 [~ bf6] ~ a6 [~ a6] ~" # s "supergong"
+    # attack 0.05
+    # decay 0.2
+    # sustain 8
+    # release 40
+    # gain 0.6
+    # hcutoff 1000
+    # room 0.9
+    # size 0.9
+    # orbit "0"
+
+-- Bells (Key Change )
+
+d3 $ slow 4 $ n "fs7 [~ fs7] ~  e7 [~ e7] ~  d7 [~ d7] ~ cs7 [~ cs7] ~" # s "supergong"
+    # attack 0.05
+    # decay 0.3
+    # sustain 10
+    # release 40
+    # gain 0.5
+    # hcutoff 500
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+d3 silence
+-----------------------------------BASS GONG------------------------------------
+-- Bass Gong (Normal Key) - Orbit 4
+
+d4 $ slow 4 $ n "d2 [~ d2] ~  c2 [~ c2] ~  bf2 [~ bf2] ~ a2 [~ a2] ~" # s "supergong"
+    # attack 0.05
+    # velocity 1.5
+    # decay 0.1
+    # sustain 1
+    # release 100
+    # gain 0.9
+    # cut 6
+    # cutoff 75
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+-- Bass Gong (Key Change)
+
+d4 $ slow 4 $ n "fs2 [~ fs42] ~  e2 [~ e2] ~  d2 [~ d2] ~ cs2 [~ cs2] ~" # s "supergong"
+    # attack 0.05
+    # velocity 1.5
+    # decay 0.1
+    # sustain 1
+    # release 100
+    # gain 0.8
+    # cut 6
+    # cutoff 75
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+d4 silence
+----------------------------------PIANO PT.3------------------------------------
+-- Paino Pt.3 (Normal Key) - Orbit 6
+
+d5 $ slow 4 $ n " ~ ~ f5 ef5 ~ ~  d5 ~ ~ [c5 d5 bf4] c5 ~" # s "superpiano"
+    # velocity 1
+    # attack 0
+    # gain 0.8
+    # sustain 4
+    # release 50
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+-- Piano Pt.3 (Key Change)
+
+d5 $ slow 4 $ n " ~ ~ a5 g5 ~ ~  fs5 ~ ~ [e5 fs5 d5] e5 ~" # s "superpiano"
+    # velocity 1
+    # attack 0
+    # gain 0.8
+    # sustain 4
+    # release 50
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+d5 silence
+-------------------------------------DRUMS--------------------------------------
+-- Drums (Key Normal) - Orbit 7
+
+d6 $ slow 4 $ n "fs4 ~ ~  e4 ~ ~  d4 ~ ~ cs4 ~ ~" # s "drum"
+    # pan 0.5
+    # attack 0.02
+    # velocity 1
+    # sustain 4
+    # release 1
+    # shape 0.9
+    # gain 0.8
+    # cutoff 800
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+-- Drums (Key Change)
+
+d6 $ slow 4 $ n "d4 ~ ~  c4 ~ ~  bf3 ~ ~ a3 ~ ~" # s "drum"
+    # pan 0.5
+    # attack 0.02
+    # velocity 1
+    # sustain 4
+    # release 1
+    # shape 0.9
+    # gain 0.8
+    # cutoff 800
+    # room 0.9
+    # size 0.9
+    # orbit "1"
+
+d6 silence
+------------------------------------------------------------------------------
+
+
+hush
+
+
+
+
+
+
+
+
+
+
+
+-- --bps (120 /60)
+--
+-- import qualified Sound.Tidal.Scales as Scales
+--
+-- let s = Scales.chromatic
+--
+--
+-- d1 $ stack [
+--  up (fmap fromIntegral $ (toScale s "8 [7 8] 6")) #sound "casio:1"
+-- ]
+--
+-- d1 $ stack [
+--  up (fmap fromIntegral $ (toScale s "8 [7 8] 6")) #sound "casio:1"
+-- ]
+--
+-- d2 $ stack [
+-- up (fmap fromIntegral $ (toScale s "6  [7 8] 6")) #sound "casio:1"
+-- ]
+--
+-- d1 $ silence
+
+--d9 $ n "bf6 [a6 bf6] g6" # s "superpiano"
